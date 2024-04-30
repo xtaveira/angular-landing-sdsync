@@ -1,0 +1,161 @@
+@import "../../../color-variables.scss";
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.image-container {
+  width: 60%;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
+  span {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+
+.benefit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10rem;
+
+  span {
+    font-weight: 800;
+
+    color: $primary-color;
+    font-style: normal;
+  }
+}
+
+.benefit-container {
+  width: 90%;
+  display: flex;
+  gap: 8.5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.benefit-data {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5rem solid $primary-color;
+  width: 40%;
+}
+
+.benefit-description {
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem 0;
+}
+
+.showCase-section {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+
+  .container-showCase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .image {
+    width: 60%;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+  }
+  #paulino {
+    background-image: url(../../../assets/equipe/paulino.jpg);
+  }
+  #davi {
+    background-image: url(../../../assets/equipe/davi.jpg);
+  }
+}
+
+.another-Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 7rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $primary-color;
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+
+  .items-footer {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  #logo-footer {
+    border-radius: 1rem;
+    background-color: #1d1d1f;
+    padding: 0.5rem;
+  }
+
+  .sdsync {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-section {
+    flex-direction: row;
+  }
+
+  // .benefit-section {
+  //   flex-direction: row;
+  // }
+}

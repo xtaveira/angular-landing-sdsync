@@ -1,0 +1,35 @@
+<section class="form-section pd">
+  <div class="text">
+    <h2>Fique por dentro das tendências</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis
+      natus consectetur, assumenda minima veritatis minus! Nisi vero inventore
+      autem voluptate aut nesciunt provident quibusdam fugit nobis omnis natus
+      eaque non, veritatis eveniet cum itaque a reprehenderit error iste
+      sapiente illo sed ea. Obcaecati quo exercitationem, consequuntur inventore
+      totam iure aspernatur deserunt voluptate vel maiores quia nisi culpa
+      pariatur tempore repellendus architecto praesentium voluptates! Eos eaque
+      amet nesciunt debitis ullam officiis, laudantium porro, nobis quam
+      doloribus saepe ipsam aliquam recusandae quibusdam veniam necessitatibus
+      sit temporibus provident, obcaecati possimus fugit. Id quae temporibus,
+      qui voluptatem magni facilis impedit quisquam voluptatum nisi.
+    </p>
+  </div>
+  <form [formGroup]="ctaForm">
+    <div>
+      <label for="name">Nome:</label>
+      <input id="name" formControlName="name" />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" />
+    </div>
+    <btn-primary
+      btn-text="se inscreva"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!ctaForm.valid"
+      [loading]="loading()"
+    ></btn-primary>
+  </form>
+</section>
